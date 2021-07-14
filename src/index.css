@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+  ;
+}
+
+.navbar{
+  background-color: #ffff !important;
+}
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #FF00CC !important;
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #00FFFF;
+}
+.navbar a:hover{
+  color: #47e3ff !important;
+}
+@media (max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+  .menu_active{
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+/* Main Landing Section css */
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 44px;
+  font-weight: 600;
+  color: rgba(12, 12, 12, 0.897);
+}
+#header h2{
+  color: #00FFFF;
+  font-size: 24px;
+}
+#header .brand-name{
+  color: #FF00CC;
+;
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: .5s;
+  color: #FF00CC;
+  border: 1px solid #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+#header .btn-get-started:hover{
+  background-color: #00FFFF;
+  color: #ffff;
+}
+
+#header-img{
+  text-align: right;
+}
+/* animation */
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+/* for diffent browser support  */
+@-webkit-keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Card Designs */
+.card-img, .card-img-bottom, .card-img-top {
+  height: 200px;
+}
+
+
+.card {
+  display: block;
+  top: 0px;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  top: -4px;
+  border: none;
+  background-color: white;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #0dcaf0;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+.card:hover:before {
+  transform: scale(2.15);
+}
+.btn-outline-info {
+  color: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+  background-color: transparent !important;
+}
